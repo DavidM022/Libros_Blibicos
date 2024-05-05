@@ -57,7 +57,7 @@ app.get('/libros/nombre/:texto', (req, res) => {
     if (librosEncontrados.length > 0) {
         res.json(librosEncontrados);
     } else {
-        res.status(404).json({ libros_por_nombre_que_contenga_el_texto_Juan: 'No se encontraron libros' });
+        res.status(404).json({ MENSAJE: 'No se encontraron libros' });
     }
 });
 
